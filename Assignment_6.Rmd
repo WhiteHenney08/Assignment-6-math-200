@@ -1,0 +1,24 @@
+
+
+```{r}
+head(pitch)
+```
+
+```{r}
+library(tidyverse)
+```
+
+#selecting the 5th row in the data set
+```{r}
+fifth_row <- pitch %>%
+  slice(5)
+
+print(fifth_row)
+```
+
+#selecting multiple rows
+```{r}
+multiple_rows <- pitch %>%
+  slice(c(1,3, 5, 7, 9, 11, 13, 15))
+print(multiple_rows)
+```
